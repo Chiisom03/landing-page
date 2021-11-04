@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>brandy</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style>
+    * {
+      font-family: "Averia Serif Libre";
+    }
+
+    html {
+      scroll-behavior: smooth;
+      transition: 1s ease;
+    }
+
+    nav {
+      box-shadow: none;
+      padding: 0;
+    }
+
+    nav ul a {
+      font-size: 1rem;
+      margin-right: 2rem;
+    }
+
+    ::selection {
+      background: #4a148c;
+      color: #fff;
+    }
+
+    nav ul a,
+    nav .brand-logo {
+      color: white;
+    }
+
+    .nav-wrapper {
+      padding: 2rem 4rem;
+      background-color: inherit;
+      position: relative;
+    }
+
+    .bg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(180deg, #1a1919, transparent);
+      background: #1a191985;
+    }
+
+    .hero-content {
+      margin-top: 6rem;
+    }
+
+    p {
+      line-height: 2rem;
+    }
+
+    nav .sidenav-trigger {
+      float: left;
+      position: relative;
+      z-index: 1;
+      height: 56px;
+      margin-left: -20px;
+    }
+
+    .parallax-container {
+      min-height: 380px;
+      line-height: 0;
+      height: 100vh;
+      color: rgba(255, 255, 255, .9);
+    }
+
+    .parallax-container .section {
+      width: 100%;
+    }
+
+    @media only screen and (max-width : 992px) {
+      .parallax-container .section {
+        position: absolute;
+        top: 40%;
+      }
+
+      #index-banner .section {
+        top: 10%;
+      }
+
+      .hero-content {
+        margin-top: 5rem;
+        padding-top: 3rem;
+      }
+    }
+
+    @media only screen and (max-width : 600px) {
+      #index-banner .section {
+        top: 0;
+      }
+
+      .hero-content {
+        padding-top: .02rem;
+      }
+    }
+
+    .icon-block {
+      padding: 0 15px;
+    }
+
+    .icon-block .material-icons {
+      font-size: inherit;
+    }
+
+    footer.page-footer {
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="index-banner" class="parallax-container">
+    <nav class="transparent" role="navigation">
+      <div class="nav-wrapper">
+        <a id="logo-container" href="#" class="brand-logo">brandy</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons white-text">menu</i></a>
+      </div>
+    </nav>
+    <div class="section no-pad-bot">
+      <div class="container">
+
+        <br><br>
+        <div class="row center hero-content">
+          <h1 class="center-align">Greatest love of All</h1>
+          <h5 class="col s12 light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dignissimos
+            reprehenderit est harum magni nesciunt neque quibusdam modi obcaecati.
+          </h5>
+        </div>
+        <div class="row center">
+          <a href="#contact" class="btn-large waves-effect waves-light deep-purple darken-3">Enroll
+            now</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax">
+      <img src="https://i.pinimg.com/originals/bd/0c/31/bd0c3178e30a229021d8614e31c78d08.jpg" alt=" sunset">
+      <div class="bg-overlay"></div>
+    </div>
+  </div>
+
+
+  <div class="container ">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row" id="about">
+        <div class="col s12 center">
+          <h4>About Us</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id
+            nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac.
+          </p>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons deep-purple-text">free_breakfast</i></h2>
+            <h5 class="center">Mission</h5>
+
+            <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias illo quisquam
+              dolor esse
+              eius exercitationem, non rerum? Optio, repudiandae porro! Commodi nihil unde quia fuga distinctio.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons deep-purple-text">group</i></h2>
+            <h5 class="center">Vision</h5>
+
+            <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias illo quisquam
+              dolor esse
+              eius exercitationem, non rerum? Optio, repudiandae porro! Commodi nihil unde quia fuga distinctio.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons deep-purple-text">fingerprint</i></h2>
+            <h5 class="center">Objectives</h5>
+
+            <p class="light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias illo quisquam
+              dolor esse
+              eius exercitationem, non rerum? Optio, repudiandae porro! Commodi nihil unde quia fuga distinctio.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Come work with us</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img
+        src="https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Landscape">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row" id="services">
+        <div class="col s12 center">
+          <h4>Services</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id
+            nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum aspernatur velit illum placeat. Vel,
+            fuga fugiat nam culpa molestias praesentium, error tempore excepturi laudantium eveniet sequi quis commodi.
+            Quae quis doloribus explicabo dignissimos accusamus cumque quasi, enim, eius facilis, vero nam porro
+            deserunt et culpa placeat? Quisquam est laudantium beatae corrupti voluptatibus porro, exercitationem ullam
+            nobis numquam, delectus cumque!
+            <br><br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, soluta quod? Optio voluptatum odio quos
+            minima sunt voluptatibus velit ducimus, veniam sint nostrum voluptatem suscipit laboriosam possimus! Quasi
+            veniam quidem quas ipsam aperiam illo, placeat non, unde modi, eos deserunt pariatur iure. Error fugiat ut
+            placeat sit quasi minus reiciendis!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, soluta quod? Optio voluptatum odio quos
+            minima sunt voluptatibus velit ducimus, veniam sint nostrum voluptatem suscipit laboriosam possimus! Quasi
+            veniam quidem quas ipsam aperiam illo, placeat non, unde modi, eos deserunt pariatur iure. Error fugiat ut
+            placeat sit quasi minus reiciendis!
+          </p>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Come work with us</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img
+        src="https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1472&q=80"
+        alt="Landscape">
+    </div>
+  </div>
+  <div class="container">
+    <div class="section">
+
+      <div class="row" id="contact">
+        <div class="col s12 center">
+          <h4>Contact Us</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id
+            nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac.
+          </p>
+
+          <form method="POST">
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons deep-purple-text prefix">account_circle</i>
+                <input type="text" class="validate" placeholder="please type your name here" id="from">
+                <label for="icon_prefix">Name</label>
+              </div>
+
+              <div class="input-field col s6">
+                <i class="material-icons deep-purple-text prefix">email</i>
+                <input type="email" class="validate" placeholder="please type your email here" id="from">
+                <label for="icon_email">Email</label>
+              </div>
+
+              <!-- <input type="email" class="validate" value="chiisom03@gmail.com" id="to"> -->
+
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons deep-purple-text prefix">message</i>
+                <textarea type="textarea1" id="body" class="materialize-textarea"
+                  placeholder="please type your email here"></textarea>
+                <label for="icon_prefix">Message</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12">
+                <button class="btn-large right waves-effect waves-light deep-purple darken-3" type="button">Send
+                  Email</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="page-footer deep-purple darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l3 s12">
+          <h5 class="white-text">important</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+
+        <div class="col l3 s12">
+          <h5 class="white-text">revisits</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">anonymous</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">reach out</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    (function ($) {
+      $(function () {
+
+        $('.sidenav').sidenav();
+        $('.parallax').parallax();
+
+      });
+    })(jQuery);
+  </script>
+
+</body>
+
+</html>
